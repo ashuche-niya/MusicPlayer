@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/songlayout"
+    >
+<ImageView
+
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_weight="3"
+    android:id="@+id/songimage"
+    android:src="@drawable/frontsongimage"
+    />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/songname"
+            android:textSize="15dp"
+            android:text="shape of you"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artistname"
+            android:text="Ed sheeran"/>
+
+    </LinearLayout>
+</LinearLayout>

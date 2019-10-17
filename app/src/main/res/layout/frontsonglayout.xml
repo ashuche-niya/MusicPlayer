@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Song">
+    <ImageView
+        android:paddingHorizontal="36dp"
+        android:layout_weight="1"
+        android:src="@drawable/frontsongimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frontsongimage"/>
+
+     <RelativeLayout
+         android:paddingVertical="8dp"
+         android:layout_centerHorizontal="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/frontsonglayout">
+         <TextView
+             android:text="shape of you"
+             android:textSize="20dp"
+             android:layout_centerHorizontal="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/frontsongname"/>
+         <TextView
+             android:layout_below="@id/frontsongname"
+             android:layout_centerHorizontal="true"
+             android:text="Ed sheeran"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/frontartistname"/>
+
+     </RelativeLayout>
+
+    <SeekBar
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/songseekbar"/>
+
+ <RelativeLayout
+     android:padding="16dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_centerInParent="true"
+
+         android:layout_centerHorizontal="true"
+         android:orientation="horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/frontbottomlayout"
+         >
+         <ImageView
+             android:paddingHorizontal="16dp"
+             android:src="@drawable/ic_skip_previous_black_24dp"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:id="@+id/frontpreviousimage"/>
+         <ImageView
+             android:paddingHorizontal="16dp"
+             android:src="@drawable/ic_pause_circle_outline_black_24dp"
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:id="@+id/frontplaypauseimage"/>
+         <ImageView
+             android:paddingHorizontal="16dp"
+             android:src="@drawable/ic_skip_next_black_24dp"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:id="@+id/frontnextimage"/>
+     </LinearLayout>
+ </RelativeLayout>
+
+</LinearLayout>

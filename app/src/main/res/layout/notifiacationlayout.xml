@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".frontsongview">
+<LinearLayout
+    android:paddingHorizontal="20dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/notificationsongname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="shape of you" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ed sheeran"
+        android:id="@+id/notificationsartistname"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notificationbtnlayout"
+        >
+        <Button
+            android:paddingHorizontal="4dp"
+            android:background="@drawable/ic_skip_previous_black_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/notificationpreviousbtn"/>
+        <Button
+            android:paddingHorizontal="4dp"
+            android:background="@drawable/ic_pause_circle_outline_black_24dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notificationplaypausebtn"/>
+        <Button
+            android:paddingHorizontal="4dp"
+            android:background="@drawable/ic_skip_next_black_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/notificationnextbtn"/>
+    </LinearLayout>
+    <ImageView
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
